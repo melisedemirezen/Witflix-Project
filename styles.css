@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+   
+}
+     
+    .witflix-logo {
+    position: static;
+    width: 467px;
+    height: 130px;
+    left: 39px;
+    top: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 157px;
+    color: #FF0000;
+    }
+    header nav {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
+    }
+
+    header nav a{  
+    margin: 0px 15px;
+    text-decoration: none;
+    color: black;  
+    }
+
+    header nav a:hover{
+    color: red;
+    }
+
+    .access-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input{
+        border: 1px solid; 
+        padding: 5px 30px 5px 10px;
+    }
+    
+    .search-icon{
+    margin-left: -25px;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+    }
+
+    .notification-button{
+        width: 20px auto;
+        height: 20px auto;
+        border-style: none;
+        color:#1AA3F3;
+        font-size: 30px;
+        }
+        .profile-image{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        }
+        .profile-button {
+        border-style: none;
+        } 
+
+   
+
+    /*main section*/
+    
+    main{
+        margin: 10px;
+        border: 1px solid black;
+        padding: 20px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    main h1 {
+        font-size: 50px;
+    }
+    .half-width {
+        width: 50%; /* Genişliği %50 yapar */
+    }
+    .movie-details {
+        list-style: none;
+        padding: 0px;
+    }   
+    .user-ratings {
+        display: flex; /* Yıldızları yan yana dizmek için */
+        align-items: center; /* Yıldızları dikeyde ortalar */
+    }
+    .user-rating i {
+        margin-right: 1px; /* Yıldızlar arasında boşluk */
+        color: orangered;
+        font-size: 15px; /* Yıldız boyutu */
+    }
+    .age-restriction-main{
+        border: 1px solid black;
+        padding: 4px;
+        border-radius: 20%;
+        margin-left: 20px;
+    }
+    .duration {
+        margin-left: 20px;
+    }
+    main h2{
+        font-size: 3rem;
+        margin: 1.5rem 0;
+    }
+    .btn{
+        background: orangered;
+        color: white;
+        display: inline-block;
+    }
+    .play-button{
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        border-radius: 0.7rem;
+        margin: 1rem 0;
+        background: orangered;
+        color: white;
+    }
+    .btn-md{
+        font-size: 1.2rem;
+        padding: 0.9rem 1.4rem;
+        border-radius: 0.5rem;
+        margin: 0.9rem 0;
+    }
+    /*section bölümü*/
+    
+    section{
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+    .suggestion-title a {
+        color: black; /* Rengi siyah yapar */
+        text-decoration: none; /* Altını çizer */
+    }
+    .suggestion-content, .suggestion-title, .movie-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2%;
+    }
+    .suggestion-item, .movie-card{
+        width: 30%;
+        aspect-ratio: 5/3;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+        
+    }
+    .suggestion-item h3 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .age-restriction{
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        padding: 4px;
+        margin: 0 1rem;
+        margin-left: 0;
+    }
+     .movie-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    .movie-card h3 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    /*footer bölümü*/
+    
+    footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 1rem;
+    }
+    footer nav{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+    footer p:nth-child(n+1){
+        margin-top: 0;
+    }
+    footer img{
+        height: 3rem;
+        margin-top: -0.5rem;
+    }
+    footer div:first-child{
+        flex-basis: 60%;
+    }
+    footer div{
+        flex-basis: 20%;
+    }
+    footer nav a:first-child{
+        margin-left: 0;
+    }
+    .footer-1 {
+        display: flex; /* Flex düzeni */
+        flex-direction: column; /* Dikey düzen */
+    }
+    
+    .footer-1 nav {
+        display: flex; /* Yatay düzen */
+        justify-content: flex-start; /* Solda hizalar */
+        margin-bottom: 10px; /* Nav ile paragraf arasında boşluk bırakır */
+    }
+    
+    .footer-1 nav a {
+        margin-right: 15px; /* Bağlantılar arasında boşluk bırakır */
+        text-decoration: none;
+        color: black;
+    }
+    
+    .footer-1 p {
+        margin: 0; /* Paragrafın dış boşluğunu sıfırlar */
+    }
+    
+    @media(max-width:768px){
+    
+            header {
+                flex-direction: column;
+                align-items: flex-start; 
+            }
+        
+            .witflix-logo {
+                margin-bottom: 10px; 
+            }
+        
+            .access-menu {
+                justify-content: flex-end; 
+                width: 100%; 
+                margin-top: 10px;
+                
+            }
+        
+            header nav {
+                justify-content: center; 
+                margin-top: 10px; 
+                width: 100%; 
+                
+            }
+        
+            main {
+                padding: 10px; 
+            }
+        
+            footer {
+                display: flex;
+                flex-direction: column; 
+                align-items: flex-start; 
+                margin-top: auto; 
+                padding-top: 10px; 
+            }
+        
+            footer p {
+                margin-bottom: 10px; 
+                order: 1; 
+            }
+        
+            .footer-1 nav a, .footer-2 nav a {
+                margin-top: 10px; 
+                flex-basis: 100%; 
+                order: 2;
+            }
+        }
